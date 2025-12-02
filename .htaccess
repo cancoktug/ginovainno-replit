@@ -74,8 +74,8 @@ RequestHeader set X-Forwarded-Host "%{HTTP_HOST}s"
 RequestHeader set X-Real-IP "%{REMOTE_ADDR}s"
 
 # Enable proxy response headers
-ProxyPreserveHost On
-ProxyRequests Off
+#ProxyPreserveHost On
+#ProxyRequests Off
 
 # Handle WebSocket connections for development HMR (if needed)
 RewriteCond %{HTTP:Upgrade} =websocket [NC]
