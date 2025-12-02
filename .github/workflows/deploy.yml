@@ -55,6 +55,10 @@ jobs:
             [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
             nvm use 20 || nvm use node
             
-            # Run deployment script
+            # First pull the latest code to get updated deploy script
+            git fetch --all
+            git reset --hard origin/main
+            
+            # Run deployment script (now using the updated version)
             chmod +x scripts/deploy_latest.sh
             ./scripts/deploy_latest.sh
