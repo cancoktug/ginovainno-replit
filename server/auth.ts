@@ -7,6 +7,7 @@ import { promisify } from "util";
 import { storage } from "./storage";
 import { User as SelectUser } from "@shared/schema";
 import connectPg from "connect-pg-simple";
+import { Pool } from "pg";
 
 declare global {
   namespace Express {
@@ -34,14 +35,32 @@ export async function setupAuth(app: Express) {
   const isProduction = process.env.NODE_ENV === "production";
   const useSecureCookies = process.env.SESSION_COOKIE_SECURE === "true" || isProduction;
   
+  // Create a dedicated pg Pool for session store with proper SSL config
+  const sessionPool = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false, // Required for Neon serverless
+    },
+  });
+  
+  // Test session pool connection
+  try {
+    const client = await sessionPool.connect();
+    await client.query('SELECT 1');
+    client.release();
+    console.log("Session store database connection successful");
+  } catch (error) {
+    console.error("Session store database connection failed:", error);
+  }
+  
   const pgStore = connectPg(session);
   const sessionStore = new pgStore({
-    conString: process.env.DATABASE_URL,
+    pool: sessionPool, // Use the configured pool instead of conString
     createTableIfMissing: true,
     ttl: sessionTtl,
     tableName: "sessions",
     errorLog: (error: Error) => {
-      console.error("Session store error:", error.message);
+      console.error("Session store error:", error.message, error.stack);
     },
   });
 
@@ -128,20 +147,25 @@ export async function setupAuth(app: Express) {
   });
 
   app.post("/api/login", (req, res, next) => {
+    console.log("Login attempt for:", req.body?.email);
     passport.authenticate("local", (err: any, user: any, info: any) => {
       if (err) {
-        console.error("Login error:", err);
+        console.error("Login authentication error:", err.message, err.stack);
         return res.status(500).json({ message: "Giriş sırasında hata oluştu" });
       }
       if (!user) {
+        console.log("Login failed - no user:", info?.message);
         return res.status(401).json({ 
           message: info?.message || "Geçersiz giriş bilgileri" 
         });
       }
+      console.log("User authenticated, creating session for:", user.email);
       req.login(user, (err) => {
         if (err) {
+          console.error("Session creation error:", err.message, err.stack);
           return res.status(500).json({ message: "Oturum başlatılamadı" });
         }
+        console.log("Login successful for:", user.email);
         res.status(200).json({
           id: user.id,
           email: user.email,
