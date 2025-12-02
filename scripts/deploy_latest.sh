@@ -104,10 +104,10 @@ main() {
     fi
     echo -e "${GREEN}✓ Environment configuration found${NC}"
     
-    # Step 3: Install dependencies
+    # Step 3: Install dependencies (including dev for build tools like vite)
     echo ""
     log "${BLUE}[3/7] Installing dependencies...${NC}"
-    npm ci --omit=dev 2>&1 || npm install --omit=dev 2>&1 || error_exit "npm install failed"
+    npm ci 2>&1 || npm install 2>&1 || error_exit "npm install failed"
     echo -e "${GREEN}✓ Dependencies installed${NC}"
     
     # Step 4: Build application
