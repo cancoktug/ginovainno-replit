@@ -31,12 +31,18 @@ async function comparePasswords(supplied: string, stored: string) {
 
 export async function setupAuth(app: Express) {
   const sessionTtl = 7 * 24 * 60 * 60 * 1000; // 1 week
+  const isProduction = process.env.NODE_ENV === "production";
+  const useSecureCookies = process.env.SESSION_COOKIE_SECURE === "true" || isProduction;
+  
   const pgStore = connectPg(session);
   const sessionStore = new pgStore({
     conString: process.env.DATABASE_URL,
     createTableIfMissing: true,
     ttl: sessionTtl,
     tableName: "sessions",
+    errorLog: (error: Error) => {
+      console.error("Session store error:", error.message);
+    },
   });
 
   const sessionSettings: session.SessionOptions = {
@@ -46,10 +52,15 @@ export async function setupAuth(app: Express) {
     store: sessionStore,
     cookie: {
       httpOnly: true,
-      secure: false, // Set to true in production with HTTPS
+      secure: useSecureCookies,
+      sameSite: (process.env.SESSION_COOKIE_SAMESITE as "lax" | "strict" | "none") || "lax",
       maxAge: sessionTtl,
+      domain: process.env.SESSION_COOKIE_DOMAIN || undefined,
     },
   };
+  
+  console.log(`Session config: secure=${useSecureCookies}, sameSite=${sessionSettings.cookie?.sameSite}, domain=${process.env.SESSION_COOKIE_DOMAIN || 'auto'}`);
+
 
   app.set("trust proxy", 1);
   app.use(session(sessionSettings));
@@ -119,6 +130,7 @@ export async function setupAuth(app: Express) {
   app.post("/api/login", (req, res, next) => {
     passport.authenticate("local", (err: any, user: any, info: any) => {
       if (err) {
+        console.error("Login error:", err);
         return res.status(500).json({ message: "Giriş sırasında hata oluştu" });
       }
       if (!user) {
