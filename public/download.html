@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download ITU Ginova Deployment Package</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        .info-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        .label {
+            font-weight: 600;
+            color: #555;
+        }
+        .value {
+            color: #333;
+        }
+        .download-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.5);
+        }
+        .download-btn:active {
+            transform: translateY(0);
+        }
+        .icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: left;
+            border-radius: 5px;
+        }
+        .note strong {
+            color: #856404;
+        }
+        .success {
+            color: #28a745;
+            font-size: 14px;
+            margin-top: 10px;
+            display: none;
+        }
+        .instructions {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: left;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .instructions ol {
+            margin: 10px 0 10px 20px;
+        }
+        .instructions li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">📦</div>
+        <h1>ITU Ginova Deployment Package</h1>
+        <p class="subtitle">Complete VDS deployment package ready to download</p>
+        
+        <div class="info-box">
+            <div class="info-item">
+                <span class="label">File Name:</span>
+                <span class="value">itu-ginova-deployment-package.tar.gz</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Size:</span>
+                <span class="value">112 MB</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Contents:</span>
+                <span class="value">Source code + Database + Documentation</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Status:</span>
+                <span class="value" style="color: #28a745; font-weight: 600;">✓ Ready</span>
+            </div>
+        </div>
+
+        <a href="/itu-ginova-deployment-package.tar.gz" download class="download-btn" onclick="showSuccess()">
+            ⬇️ Download Package
+        </a>
+        
+        <p class="success" id="success">✓ Download started! Check your downloads folder.</p>
+
+        <div class="instructions">
+            <strong>📋 After Download:</strong>
+            <ol>
+                <li>Extract the package: <code>tar -xzf itu-ginova-deployment-package.tar.gz</code></li>
+                <li>Read first: <code>README_DEPLOYMENT.md</code></li>
+                <li>Deploy: <code>./deploy.sh</code></li>
+            </ol>
+            <strong>⏱️ Deployment time:</strong> 30-60 minutes
+        </div>
+
+        <div class="note">
+            <strong>⚠️ Important:</strong> This package contains the complete application including database with real user data. Please review DEPLOYMENT.md for security and GDPR compliance guidelines.
+        </div>
+    </div>
+
+    <script>
+        function showSuccess() {
+            document.getElementById('success').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

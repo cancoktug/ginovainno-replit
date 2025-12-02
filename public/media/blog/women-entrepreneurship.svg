@@ -1,0 +1,55 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="womenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BE185D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#FDF2F8"/>
+  
+  <!-- Female entrepreneur silhouette -->
+  <circle cx="200" cy="100" r="25" fill="url(#womenGrad)" opacity="0.9"/>
+  <path d="M 175 125 Q 200 130 225 125 Q 225 160 175 160 Z" fill="url(#womenGrad)" opacity="0.9"/>
+  
+  <!-- Briefcase -->
+  <rect x="240" y="140" width="25" height="18" fill="#3B82F6" rx="3"/>
+  <rect x="245" y="135" width="15" height="5" fill="#1E40AF" rx="2"/>
+  
+  <!-- Growth chart -->
+  <rect x="80" y="180" width="240" height="80" fill="#F1F5F9" rx="5"/>
+  <polyline points="100,240 130,220 160,210 190,190 220,200 250,180 280,170 310,160" 
+            fill="none" stroke="url(#womenGrad)" stroke-width="4"/>
+  
+  <!-- Chart bars -->
+  <rect x="110" y="230" width="8" height="20" fill="#EC4899" opacity="0.7"/>
+  <rect x="130" y="215" width="8" height="35" fill="#EC4899" opacity="0.7"/>
+  <rect x="150" y="205" width="8" height="45" fill="#EC4899" opacity="0.7"/>
+  <rect x="170" y="185" width="8" height="65" fill="#EC4899" opacity="0.7"/>
+  <rect x="190" y="195" width="8" height="55" fill="#EC4899" opacity="0.7"/>
+  <rect x="210" y="175" width="8" height="75" fill="#EC4899" opacity="0.7"/>
+  <rect x="230" y="165" width="8" height="85" fill="#EC4899" opacity="0.7"/>
+  <rect x="250" y="155" width="8" height="95" fill="#EC4899" opacity="0.7"/>
+  
+  <!-- Network connections -->
+  <circle cx="120" cy="120" r="8" fill="#FF5722" opacity="0.8"/>
+  <circle cx="280" cy="120" r="8" fill="#FF5722" opacity="0.8"/>
+  <circle cx="150" cy="80" r="8" fill="#FF5722" opacity="0.8"/>
+  <circle cx="250" cy="80" r="8" fill="#FF5722" opacity="0.8"/>
+  
+  <!-- Connection lines -->
+  <line x1="200" y1="100" x2="120" y2="120" stroke="#EC4899" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="100" x2="280" y2="120" stroke="#EC4899" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="100" x2="150" y2="80" stroke="#EC4899" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="100" x2="250" y2="80" stroke="#EC4899" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Success symbols -->
+  <polygon points="350,50 360,70 370,50" fill="#10B981"/>
+  <text x="360" y="45" text-anchor="middle" fill="#059669" font-family="Arial" font-size="12" font-weight="bold">↗</text>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="#BE185D" font-family="Arial" font-size="16" font-weight="bold">Kadın Girişimciliği</text>
+  <text x="200" y="45" text-anchor="middle" fill="#64748B" font-family="Arial" font-size="12">Güçlü Liderlik</text>
+  <text x="200" y="285" text-anchor="middle" fill="#64748B" font-family="Arial" font-size="10">Innovation • Leadership • Success</text>
+</svg>

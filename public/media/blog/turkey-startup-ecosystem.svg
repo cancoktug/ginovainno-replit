@@ -1,0 +1,38 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="turkeyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F8FAFC"/>
+  
+  <!-- Network nodes representing ecosystem -->
+  <circle cx="200" cy="150" r="40" fill="url(#turkeyGrad)" opacity="0.9"/>
+  <circle cx="120" cy="100" r="25" fill="#FF5722" opacity="0.8"/>
+  <circle cx="280" cy="100" r="25" fill="#FF5722" opacity="0.8"/>
+  <circle cx="120" cy="200" r="25" fill="#FF5722" opacity="0.8"/>
+  <circle cx="280" cy="200" r="25" fill="#FF5722" opacity="0.8"/>
+  
+  <!-- Connection lines -->
+  <line x1="200" y1="150" x2="120" y2="100" stroke="#3B82F6" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="150" x2="280" y2="100" stroke="#3B82F6" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="150" x2="120" y2="200" stroke="#3B82F6" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="150" x2="280" y2="200" stroke="#3B82F6" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Turkish flag colors accent -->
+  <rect x="20" y="20" width="30" height="20" fill="#FF0000"/>
+  <polygon points="25,25 35,30 25,35" fill="#FFFFFF"/>
+  <circle cx="40" cy="30" r="6" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  
+  <!-- Chart elements -->
+  <rect x="60" y="250" width="280" height="40" fill="#E5E7EB" rx="5"/>
+  <rect x="60" y="250" width="200" height="40" fill="url(#turkeyGrad)" rx="5"/>
+  
+  <!-- Icons and symbols -->
+  <text x="200" y="165" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">TR</text>
+  <text x="200" y="30" text-anchor="middle" fill="#1E40AF" font-family="Arial" font-size="16" font-weight="bold">Türkiye Girişimcilik</text>
+  <text x="200" y="45" text-anchor="middle" fill="#64748B" font-family="Arial" font-size="12">Ekosistemi 2025</text>
+</svg>

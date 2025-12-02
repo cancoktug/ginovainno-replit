@@ -1,0 +1,101 @@
+tail -f -n 100 /home/ginovai/public_html/logs/err.log
+2025-10-08 13:25:55 +03:00: npm ERR! code ELIFECYCLE
+2025-10-08 13:25:55 +03:00: npm ERR! errno 1
+2025-10-08 13:25:55 +03:00: npm ERR! rest-express@1.0.0 dev: `NODE_ENV=development tsx server/index.ts`
+2025-10-08 13:25:55 +03:00: ERR! Exit status 1
+2025-10-08 13:25:55 +03:00: npm ERR! 
+2025-10-08 13:25:55 +03:00: npm ERR! Failed at the rest-express@1.0.0 dev script.
+2025-10-08 13:25:55 +03:00: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2025-10-08 13:25:57 +03:00: 
+2025-10-08 13:25:57 +03:00:  A complete log of this run can be found in:
+2025-10-08 13:25:57 +03:00: npm ERR!     /root/.npm/_logs/2025-10-08T10_25_55_103Z-debug.log
+2025-10-08 13:31:00 +03:00: Error creating default admin user: ErrorEvent {
+2025-10-08 13:31:00 +03:00:   [Symbol(kTarget)]: WebSocket {
+2025-10-08 13:31:00 +03:00:     _events: [Object: null prototype] {
+2025-10-08 13:31:00 +03:00:       error: [Function],
+2025-10-08 13:31:00 +03:00:       message: [Function],
+2025-10-08 13:31:00 +03:00:       close: [Function],
+2025-10-08 13:31:00 +03:00:       open: [Function]
+2025-10-08 13:31:00 +03:00:     },
+2025-10-08 13:31:00 +03:00:     _eventsCount: 4,
+2025-10-08 13:31:00 +03:00:     _maxListeners: undefined,
+2025-10-08 13:31:00 +03:00:     _binaryType: 'arraybuffer',
+2025-10-08 13:31:00 +03:00:     _closeCode: 1006,
+2025-10-08 13:31:00 +03:00:     _closeFrameReceived: false,
+2025-10-08 13:31:00 +03:00:     _closeFrameSent: false,
+2025-10-08 13:31:00 +03:00:     _closeMessage: <Buffer >,
+2025-10-08 13:31:00 +03:00:     _closeTimer: null,
+2025-10-08 13:31:00 +03:00:     _errorEmitted: true,
+2025-10-08 13:31:00 +03:00:     _extensions: {},
+2025-10-08 13:31:00 +03:00:     _paused: false,
+2025-10-08 13:31:00 +03:00:     _protocol: '',
+2025-10-08 13:31:00 +03:00:     _readyState: 3,
+2025-10-08 13:31:00 +03:00:     _receiver: null,
+2025-10-08 13:31:00 +03:00:     _sender: null,
+2025-10-08 13:31:00 +03:00:     _socket: null,
+2025-10-08 13:31:00 +03:00:     _bufferedAmount: 0,
+2025-10-08 13:31:00 +03:00:     _isServer: false,
+2025-10-08 13:31:00 +03:00:     _redirects: 0,
+2025-10-08 13:31:00 +03:00:     _autoPong: true,
+2025-10-08 13:31:00 +03:00:     _url: 'wss://localhost/v2',
+2025-10-08 13:31:00 +03:00:     _req: null,
+2025-10-08 13:31:00 +03:00:     [Symbol(shapeMode)]: false,
+2025-10-08 13:31:00 +03:00:     [Symbol(kCapture)]: false
+2025-10-08 13:31:00 +03:00:   },
+2025-10-08 13:31:00 +03:00:   [Symbol(kType)]: 'error',
+2025-10-08 13:31:00 +03:00:   [Symbol(kError)]: AggregateError [ECONNREFUSED]: 
+2025-10-08 13:31:00 +03:00:       at internalConnectMultiple (node:net:1134:18)
+2025-10-08 13:31:00 +03:00:       at afterConnectMultiple (node:net:1715:7) {
+2025-10-08 13:31:00 +03:00:     code: 'ECONNREFUSED',
+2025-10-08 13:31:00 +03:00:     [errors]: [ [Error], [Error] ]
+2025-10-08 13:31:00 +03:00:   },
+2025-10-08 13:31:00 +03:00:   [Symbol(kMessage)]: ''
+2025-10-08 13:31:00 +03:00: }
+2025-10-08 13:31:02 +03:00: Browserslist: browsers data (caniuse-lite) is 12 months old. Please run:
+2025-10-08 13:31:02 +03:00:   npx update-browserslist-db@latest
+2025-10-08 13:31:02 +03:00:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2025-10-08 13:32:26 +03:00: Error creating default admin user: ErrorEvent {
+2025-10-08 13:32:26 +03:00:   [Symbol(kTarget)]: WebSocket {
+2025-10-08 13:32:26 +03:00:     _events: [Object: null prototype] {
+2025-10-08 13:32:26 +03:00:       error: [Function],
+2025-10-08 13:32:26 +03:00:       message: [Function],
+2025-10-08 13:32:26 +03:00:       close: [Function],
+2025-10-08 13:32:26 +03:00:       open: [Function]
+2025-10-08 13:32:26 +03:00:     },
+2025-10-08 13:32:26 +03:00:     _eventsCount: 4,
+2025-10-08 13:32:26 +03:00:     _maxListeners: undefined,
+2025-10-08 13:32:26 +03:00:     _binaryType: 'arraybuffer',
+2025-10-08 13:32:26 +03:00:     _closeCode: 1006,
+2025-10-08 13:32:26 +03:00:     _closeFrameReceived: false,
+2025-10-08 13:32:26 +03:00:     _closeFrameSent: false,
+2025-10-08 13:32:26 +03:00:     _closeMessage: <Buffer >,
+2025-10-08 13:32:26 +03:00:     _closeTimer: null,
+2025-10-08 13:32:26 +03:00:     _errorEmitted: true,
+2025-10-08 13:32:26 +03:00:     _extensions: {},
+2025-10-08 13:32:26 +03:00:     _paused: false,
+2025-10-08 13:32:26 +03:00:     _protocol: '',
+2025-10-08 13:32:26 +03:00:     _readyState: 3,
+2025-10-08 13:32:26 +03:00:     _receiver: null,
+2025-10-08 13:32:26 +03:00:     _sender: null,
+2025-10-08 13:32:26 +03:00:     _socket: null,
+2025-10-08 13:32:26 +03:00:     _bufferedAmount: 0,
+2025-10-08 13:32:26 +03:00:     _isServer: false,
+2025-10-08 13:32:26 +03:00:     _redirects: 0,
+2025-10-08 13:32:26 +03:00:     _autoPong: true,
+2025-10-08 13:32:26 +03:00:     _url: 'wss://localhost/v2',
+2025-10-08 13:32:26 +03:00:     _req: null,
+2025-10-08 13:32:26 +03:00:     [Symbol(shapeMode)]: false,
+2025-10-08 13:32:26 +03:00:     [Symbol(kCapture)]: false
+2025-10-08 13:32:26 +03:00:   },
+2025-10-08 13:32:26 +03:00:   [Symbol(kType)]: 'error',
+2025-10-08 13:32:26 +03:00:   [Symbol(kError)]: AggregateError [ECONNREFUSED]: 
+2025-10-08 13:32:26 +03:00:       at internalConnectMultiple (node:net:1134:18)
+2025-10-08 13:32:26 +03:00:       at afterConnectMultiple (node:net:1715:7) {
+2025-10-08 13:32:26 +03:00:     code: 'ECONNREFUSED',
+2025-10-08 13:32:26 +03:00:     [errors]: [ [Error], [Error] ]
+2025-10-08 13:32:26 +03:00:   },
+2025-10-08 13:32:26 +03:00:   [Symbol(kMessage)]: ''
+2025-10-08 13:32:26 +03:00: }
+2025-10-08 13:33:11 +03:00: Browserslist: browsers data (caniuse-lite) is 12 months old. Please run:
+2025-10-08 13:33:11 +03:00:   npx update-browserslist-db@latest
+2025-10-08 13:33:11 +03:00:   Why you should do it regularly: https://github.com/browserslist/update-db#readme

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Ginova Deployment Package</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        .alert {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 30px;
+            color: #856404;
+        }
+        .download-item {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+        .download-item:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+        .download-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        .download-btn:hover {
+            background: #5568d3;
+        }
+        .file-info {
+            color: #666;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        .instructions {
+            background: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .instructions h3 {
+            color: #0066cc;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .instructions ol {
+            margin-left: 20px;
+            color: #333;
+        }
+        .instructions li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .code {
+            background: #2d3748;
+            color: #48bb78;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        .success {
+            color: #48bb78;
+            font-weight: 600;
+        }
+        .number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📦 Ginova Deployment Package</h1>
+        <p class="subtitle">Total Size: 364.52 MB (Split into 4 parts)</p>
+        
+        <div class="alert">
+            ⚠️ <strong>Important:</strong> Download ALL 4 parts before combining them!
+        </div>
+
+        <div class="download-item">
+            <div><span class="number">1</span><strong>Part 1 of 4</strong></div>
+            <div class="file-info">ginova-part-aa (100 MB)</div>
+            <a href="/ginova-part-aa" class="download-btn" download>Download Part 1</a>
+        </div>
+
+        <div class="download-item">
+            <div><span class="number">2</span><strong>Part 2 of 4</strong></div>
+            <div class="file-info">ginova-part-ab (100 MB)</div>
+            <a href="/ginova-part-ab" class="download-btn" download>Download Part 2</a>
+        </div>
+
+        <div class="download-item">
+            <div><span class="number">3</span><strong>Part 3 of 4</strong></div>
+            <div class="file-info">ginova-part-ac (100 MB)</div>
+            <a href="/ginova-part-ac" class="download-btn" download>Download Part 3</a>
+        </div>
+
+        <div class="download-item">
+            <div><span class="number">4</span><strong>Part 4 of 4</strong></div>
+            <div class="file-info">ginova-part-ad (65 MB)</div>
+            <a href="/ginova-part-ad" class="download-btn" download>Download Part 4</a>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 After downloading all parts:</h3>
+            <ol>
+                <li>Put all 4 files in the same folder</li>
+                <li>Upload them to your server using WinSCP or FileZilla</li>
+                <li>SSH into your server and run this command to combine them:</li>
+            </ol>
+            <div class="code">cat ginova-part-aa ginova-part-ab ginova-part-ac ginova-part-ad > ginova-deployment.tar.gz</div>
+            <ol start="4">
+                <li>Verify the file (should be ~365MB):</li>
+            </ol>
+            <div class="code">ls -lh ginova-deployment.tar.gz</div>
+            <ol start="5">
+                <li>Extract and deploy:</li>
+            </ol>
+            <div class="code">tar -xzf ginova-deployment.tar.gz
+cd ginova-deployment
+chmod +x DEPLOY_TO_SERVER.sh
+./DEPLOY_TO_SERVER.sh</div>
+        </div>
+    </div>
+</body>
+</html>

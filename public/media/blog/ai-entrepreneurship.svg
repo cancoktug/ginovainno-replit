@@ -1,0 +1,47 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5B21B6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="brainGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#A855F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#FAF5FF"/>
+  
+  <!-- AI Brain/Network -->
+  <circle cx="200" cy="120" r="50" fill="url(#brainGrad)" opacity="0.9"/>
+  
+  <!-- Neural network connections -->
+  <circle cx="150" cy="80" r="8" fill="#FF5722"/>
+  <circle cx="250" cy="80" r="8" fill="#FF5722"/>
+  <circle cx="150" cy="160" r="8" fill="#FF5722"/>
+  <circle cx="250" cy="160" r="8" fill="#FF5722"/>
+  <circle cx="120" cy="120" r="8" fill="#FF5722"/>
+  <circle cx="280" cy="120" r="8" fill="#FF5722"/>
+  
+  <!-- Connections -->
+  <line x1="200" y1="120" x2="150" y2="80" stroke="#8B5CF6" stroke-width="2" opacity="0.7"/>
+  <line x1="200" y1="120" x2="250" y2="80" stroke="#8B5CF6" stroke-width="2" opacity="0.7"/>
+  <line x1="200" y1="120" x2="150" y2="160" stroke="#8B5CF6" stroke-width="2" opacity="0.7"/>
+  <line x1="200" y1="120" x2="250" y2="160" stroke="#8B5CF6" stroke-width="2" opacity="0.7"/>
+  <line x1="200" y1="120" x2="120" y2="120" stroke="#8B5CF6" stroke-width="2" opacity="0.7"/>
+  <line x1="200" y1="120" x2="280" y2="120" stroke="#8B5CF6" stroke-width="2" opacity="0.7"/>
+  
+  <!-- AI Symbol -->
+  <text x="200" y="130" text-anchor="middle" fill="white" font-family="Arial" font-size="20" font-weight="bold">AI</text>
+  
+  <!-- Data streams -->
+  <rect x="50" y="220" width="300" height="4" fill="#E5E7EB" rx="2"/>
+  <rect x="50" y="230" width="280" height="4" fill="#8B5CF6" rx="2"/>
+  <rect x="50" y="240" width="320" height="4" fill="#3B82F6" rx="2"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="#5B21B6" font-family="Arial" font-size="16" font-weight="bold">AI Girişimcilik</text>
+  <text x="200" y="45" text-anchor="middle" fill="#64748B" font-family="Arial" font-size="12">Yapay Zeka Çağı</text>
+  <text x="200" y="270" text-anchor="middle" fill="#64748B" font-family="Arial" font-size="10">Machine Learning • Deep Learning • Innovation</text>
+</svg>

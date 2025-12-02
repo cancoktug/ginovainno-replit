@@ -1,0 +1,41 @@
+ file:///home/ginovai/public_html/node_modules/tsx/dist/cli.mjs:18
+0|ginova-app  | 2025-10-08 13:25:40 +03:00: `)),u)return{id:"examples",type:"section",data:{title:"Examples:",body:u}}}a(ei,"F");function ti(t){if(!("alias"in t)||!t.alias)return;const{alias:e}=t;return{id:"aliases",type:"section",data:{title:"Aliases:",body:Array.isArray(e)?e.join(", "):e}}}a(ti,"H");const ui=a(t=>[qr,Xr,Qr,Zr,Jr,ei,ti].map(e=>e(t)).filter(Boolean),"U"),si=bn.WriteStream.prototype.hasColors();class ni{static{a(this,"M")}text(e){return e}bold(e){return si?`\x1B[1m${e}\x1B[22m`:e.toLocaleUpperCase()}indentText({text:e,spaces:u}){return e.replace(/^/gm," ".repeat(u))}heading(e){return this.bold(e)}section({title:e,body:u,indentBody:s=2}){return`${(e?`${this.heading(e)}
+0|ginova-app  | 2025-10-08 13:25:40 +03:00:                                                                                                                                                                                                                                                                                                                                                                                                  ^
+0|ginova-app  | 2025-10-08 13:25:40 +03:00: 
+0|ginova-app  | 2025-10-08 13:25:40 +03:00: SyntaxError: Unexpected token '{'
+0|ginova-app  | 2025-10-08 13:25:40 +03:00:     at Loader.moduleStrategy (internal/modules/esm/translators.js:145:18)
+0|ginova-app  | 2025-10-08 13:25:40 +03:00:     at async link (internal/modules/esm/module_job.js:47:21)
+0|ginova-app  | 2025-10-08 13:25:40 +03:00: npm ERR!
+0|ginova-app  | 2025-10-08 13:25:40 +03:00:  code ELIFECYCLE
+0|ginova-app  | 2025-10-08 13:25:40 +03:00: npm ERR! errno 1
+0|ginova-app  | 2025-10-08 13:25:40 +03:00: npm ERR! rest-express@1.0.0 dev: `NODE_ENV=development tsx server/index.ts`
+0|ginova-app  | 2025-10-08 13:25:40 +03:00:  Exit status 1
+0|ginova-app  | 2025-10-08 13:25:40 +03:00: npm ERR! 
+0|ginova-app  | 2025-10-08 13:25:40 +03:00: npm ERR! Failed at the rest-express@1.0.0 dev script.
+0|ginova-app  | 2025-10-08 13:25:40 +03:00: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+0|ginova-app  | 2025-10-08 13:25:42 +03:00: 
+0|ginova-app  | 2025-10-08 13:25:42 +03:00: npm ERR! A complete log of this run can be found in:
+0|ginova-app  | 2025-10-08 13:25:42 +03:00: npm ERR!     /root/.npm/_logs/2025-10-08T10_25_40_062Z-debug.log
+^C
+[root@srv public_html]# npm run dev
+
+> rest-express@1.0.0 dev /home/ginovai/public_html
+> NODE_ENV=development tsx server/index.ts
+
+file:///home/ginovai/public_html/node_modules/tsx/dist/cli.mjs:18
+`)),u)return{id:"examples",type:"section",data:{title:"Examples:",body:u}}}a(ei,"F");function ti(t){if(!("alias"in t)||!t.alias)return;const{alias:e}=t;return{id:"aliases",type:"section",data:{title:"Aliases:",body:Array.isArray(e)?e.join(", "):e}}}a(ti,"H");const ui=a(t=>[qr,Xr,Qr,Zr,Jr,ei,ti].map(e=>e(t)).filter(Boolean),"U"),si=bn.WriteStream.prototype.hasColors();class ni{static{a(this,"M")}text(e){return e}bold(e){return si?`\x1B[1m${e}\x1B[22m`:e.toLocaleUpperCase()}indentText({text:e,spaces:u}){return e.replace(/^/gm," ".repeat(u))}heading(e){return this.bold(e)}section({title:e,body:u,indentBody:s=2}){return`${(e?`${this.heading(e)}
+                                                                                                                                                                                                                                                                                                                                                                                                 ^
+
+SyntaxError: Unexpected token '{'
+    at Loader.moduleStrategy (internal/modules/esm/translators.js:145:18)
+    at async link (internal/modules/esm/module_job.js:47:21)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! rest-express@1.0.0 dev: `NODE_ENV=development tsx server/index.ts`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the rest-express@1.0.0 dev script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2025-10-08T10_26_04_645Z-debug.log

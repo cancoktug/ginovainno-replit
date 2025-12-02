@@ -1,0 +1,30 @@
+1:32:26 PM [express] serving on port 5000
+
+0|ginova-app  | 2025-10-08 13:33:07 +03:00: 1:33:07 PM [express] GET /api/auth/user 401 in 9ms :: {"message":"Unauthorized"}
+0|ginova-app  | 2025-10-08 13:33:07 +03:00: 1:33:07 PM [express] GET /api/programs 500 in 10ms :: {"message":"Failed to fetch programs"}
+0|ginova-app  | 2025-10-08 13:33:07 +03:00: 1:33:07 PM [express] GET /api/mentors 500 in 8ms :: {"message":"Failed to fetch mentors"}
+0|ginova-app  | 2025-10-08 13:33:07 +03:00: 1:33:07 PM [express] GET /api/events 500 in 12ms :: {"message":"Failed to fetch events"}
+0|ginova-app  | 2025-10-08 13:33:07 +03:00: 1:33:07 PM [express] GET /api/blog 500 in 10ms :: {"message":"Failed to fetch blog posts"}
+0|ginova-app  | 2025-10-08 13:33:07 +03:00: 1:33:07 PM [express] GET /api/auth/user 401 in 2ms :: {"message":"Unauthorized"}
+0|ginova-app  | 2025-10-08 13:33:07 +03:00: 1:33:07 PM [express] GET /api/mentors 500 in 11ms :: {"message":"Failed to fetch mentors"}
+0|ginova-app  | 2025-10-08 13:33:07 +03:00: 1:33:07 PM [express] GET /api/programs 500 in 16ms :: {"message":"Failed to fetch programs"}
+0|ginova-app  | 2025-10-08 13:33:07 +03:00: 1:33:07 PM [express] GET /api/events 500 in 9ms :: {"message":"Failed to fetch events"}
+0|ginova-app  | 2025-10-08 13:33:07 +03:00: 1:33:07 PM [express] GET /api/blog 500 in 8ms :: {"message":"Failed to fetch blog posts"}
+0|ginova-app  | 2025-10-08 13:33:11 +03:00: Browserslist: browsers data (caniuse-lite) is 12 months old. Please run:
+0|ginova-app  | 2025-10-08 13:33:11 +03:00:   npx update-browserslist-db@latest
+0|ginova-app  | 2025-10-08 13:33:11 +03:00:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+0|ginova-app  | 2025-10-08 13:33:13 +03:00: 1:33:13 PM [express] GET /api/auth/user 401 in 2ms :: {"message":"Unauthorized"}
+0|ginova-app  | 2025-10-08 13:33:14 +03:00: 1:33:14 PM [express] GET /api/programs 500 in 1471ms :: {"message":"Failed to fetch programs"}
+0|ginova-app  | 2025-10-08 13:33:15 +03:00: 1:33:15 PM [express] GET /api/blog 500 in 1382ms :: {"message":"Failed to fetch blog posts"}
+0|ginova-app  | 2025-10-08 13:33:15 +03:00: 1:33:15 PM [express] GET /api/events 500 in 143ms :: {"message":"Failed to fetch events"}
+0|ginova-app  | 2025-10-08 13:33:15 +03:00: 1:33:15 PM [express] GET /api/mentors 500 in 229ms :: {"message":"Failed to fetch mentors"}
+0|ginova-app  | 2025-10-08 13:33:15 +03:00: 1:33:15 PM [express] GET /api/auth/user 401 in 1ms :: {"message":"Unauthorized"}
+0|ginova-app  | 2025-10-08 13:33:15 +03:00: 1:33:15 PM [express] GET /api/programs 500 in 68ms :: {"message":"Failed to fetch programs"}
+0|ginova-app  | 2025-10-08 13:33:15 +03:00: 1:33:15 PM [express] GET /api/events 500 in 99ms :: {"message":"Failed to fetch events"}
+0|ginova-app  | 2025-10-08 13:33:15 +03:00: 1:33:15 PM [express] GET /api/blog 500 in 79ms :: {"message":"Failed to fetch blog posts"}
+0|ginova-app  | 2025-10-08 13:33:15 +03:00: 1:33:15 PM [express] GET /api/mentors 500 in 67ms :: {"message":"Failed to fetch mentors"}
+0|ginova-app  | 2025-10-08 13:33:26 +03:00: 1:33:26 PM [express] GET /api/events 500 in 21ms :: {"message":"Failed to fetch events"}
+0|ginova-app  | 2025-10-08 13:33:26 +03:00: 1:33:26 PM [express] GET /api/auth/user 401 in 1ms :: {"message":"Unauthorized"}
+0|ginova-app  | 2025-10-08 13:33:26 +03:00: 1:33:26 PM [express] GET /api/mentors 500 in 18ms :: {"message":"Failed to fetch mentors"}
+0|ginova-app  | 2025-10-08 13:33:26 +03:00: 1:33:26 PM [express] GET /api/blog 500 in 16ms :: {"message":"Failed to fetch blog posts"}
+0|ginova-app  | 2025-10-08 13:33:26 +03:00: 1:33:26 PM [express] GET /api/programs 500 in 15ms :: {"message":"Failed to fetch programs"}

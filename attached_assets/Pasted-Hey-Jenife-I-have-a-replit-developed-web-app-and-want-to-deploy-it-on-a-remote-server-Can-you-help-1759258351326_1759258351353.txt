@@ -1,0 +1,27 @@
+Hey Jenife, I have a replit developed web app and want to deploy it on a remote server. Can you help me? Thanks
+
+Hi Jenife yes, we developed the project on replit. We want to deploy it on a different server. The project runs on nodejs and postgresql. Server team installed nodejs and postgresql. Server is vds environment and there is a seperate hosting account on which all required apps installed. Even backup files related with nodejs and project were uploaded to server. Server is managed by Centos Web Panel. Similiar to Cpanel. The project replit deployment is on this link: https://ginova.replit.app If you are interested pls feel free to ask more. Thanks
+
+Hi Jenife thanks for your consideration. Regarding your questions I will try to answer all to clarify the points but honestly some of them may be beyond my tech skills. We think you will migrate the shema and data that is already on the replit db. The app will be served on a custom domain, domain is already pointed to our nameserver. Our goal is to get it running on the domain but if you offer a more robust setup we can discuss about it. The first and primary goal is to launch the web app as soon as possible. Deploying on replit had some other concerns so we decided to migrate to our vds server. Stability and scalability may be 2 main outcome goals on this project. Lastly I can say that there may be several upcoming new versions in 3-4 months. So we may ask for the update migrations from replit to our several apart from this first deployment. Also, we have other ongoing projects on replit, so we would also like to work with you on the pending projects. Thanks
+
+Yes I would be happy, If you can share a breakdown, time estimation and an offer. Thanks
+
+Hi Jenife, This breakdowns are ok with me. We can discuss a long-term setup on a different project on whic we do not have time constraints. We an keep this first deployment. Can you share a budget proposal?
+
+I would be happy if you can share alternative budgets for alternative aproaches via text here with possible timelines. Than we can discuss and you can share the official proposal and I can buy it.
+
+Thanks for detailed explanation. Each option described clearly. But honestly to say this the options are very high related to related services. Prices are ranging from 18 Eur's to 70 Eur's. I can understand your budget offer related with explanations but I should share these first: 1. NodeJs app is already installed and version control is already done by server team. 2. Postgresql is already installed and version control was done by server team. And I liked the option 3 wihich is automated future deployments. And I have one question about his scenario. What is the flat rate migration of 80 USD for if we choose the automated deployment option?
+
+And lastly, regarding the last message, I am satisfied with your detailed explanations. But honestly the prices are too much for my budget. If you can offer affordable prices I can make a promise that I will always work with you regularly. Thanks for understanding and will really apreciate your collab here.
+
+Hi Jenife thanks for the latest message. Your instention and detailed explations are very kind and thanks for each. I would like to ask about the latest pricing because there are several prices here. What is  80 USD and 120-180 Usd for.
+
+Hi Jenife, it is still over my budget. Regarding your detailed explanaitons and in depth sugestions I wil push myself on this project to work with you. I can increase my budget to 120 USD for the tailored approach, option 3 with automated deployment. But I can not afford more than this budget. If it suits for you we can discuss about details and start today. Thanks
+
+One last push to 130. I really can not go over it. It is not a bargain hope you understand. If we can get it for 130 lets start immeadiately.
+
+So as we discussed it will be option 3 with automated deployment and workflow, am I right? If we both agree yes you can share the proposal
+
+Yes pls 🙏🏻waiting the proposal.
+
+I meant Official offer via fiverr

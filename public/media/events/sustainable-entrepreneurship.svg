@@ -1,0 +1,46 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sustainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22C55E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F0FDF4"/>
+  
+  <!-- Earth/Globe -->
+  <circle cx="200" cy="120" r="45" fill="url(#sustainGrad)" opacity="0.9"/>
+  
+  <!-- Recycling arrows around earth -->
+  <path d="M 150 90 Q 130 70 150 50 Q 170 70 150 90" fill="none" stroke="#FF5722" stroke-width="3" opacity="0.8"/>
+  <path d="M 250 90 Q 270 70 250 50 Q 230 70 250 90" fill="none" stroke="#FF5722" stroke-width="3" opacity="0.8"/>
+  <path d="M 180 170 Q 160 190 180 210 Q 200 190 180 170" fill="none" stroke="#FF5722" stroke-width="3" opacity="0.8"/>
+  <path d="M 220 170 Q 240 190 220 210 Q 200 190 220 170" fill="none" stroke="#FF5722" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Sustainable icons -->
+  <rect x="80" y="200" width="30" height="40" fill="#3B82F6" rx="3"/> <!-- Solar panel -->
+  <rect x="85" y="205" width="20" height="2" fill="#FFF"/>
+  <rect x="85" y="210" width="20" height="2" fill="#FFF"/>
+  <rect x="85" y="215" width="20" height="2" fill="#FFF"/>
+  
+  <circle cx="150" cy="220" r="15" fill="#10B981"/> <!-- Wind turbine base -->
+  <line x1="150" y1="205" x2="150" y2="235" stroke="#FFF" stroke-width="2"/>
+  <line x1="145" y1="210" x2="155" y2="210" stroke="#FFF" stroke-width="2"/>
+  
+  <rect x="290" y="205" width="25" height="30" fill="#22C55E" rx="3"/> <!-- Tree -->
+  <circle cx="302" cy="200" r="8" fill="#16A34A"/>
+  
+  <!-- Progress bars -->
+  <rect x="50" y="260" width="300" height="8" fill="#E5E7EB" rx="4"/>
+  <rect x="50" y="260" width="240" height="8" fill="url(#sustainGrad)" rx="4"/>
+  
+  <!-- Earth continents -->
+  <path d="M 180 110 Q 200 100 220 110 Q 210 130 180 110" fill="#15803D" opacity="0.7"/>
+  <path d="M 190 130 Q 210 140 200 150 Q 185 145 190 130" fill="#15803D" opacity="0.7"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="#15803D" font-family="Arial" font-size="16" font-weight="bold">Sürdürülebilir Girişimcilik</text>
+  <text x="200" y="45" text-anchor="middle" fill="#64748B" font-family="Arial" font-size="12">Gelecek İçin İş Modelleri</text>
+  <text x="200" y="285" text-anchor="middle" fill="#64748B" font-family="Arial" font-size="10">ESG • Circular Economy • Social Impact</text>
+</svg>

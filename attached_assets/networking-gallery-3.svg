@@ -1,0 +1,20 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg3)" />
+  <!-- Group photo representation -->
+  <rect x="100" y="150" width="400" height="200" fill="#ffffff" fill-opacity="0.1" rx="10" />
+  <!-- People in group -->
+  <circle cx="180" cy="220" r="15" fill="#ffffff" fill-opacity="0.3" />
+  <circle cx="240" cy="210" r="18" fill="#ffffff" fill-opacity="0.3" />
+  <circle cx="300" cy="215" r="16" fill="#ffffff" fill-opacity="0.3" />
+  <circle cx="360" cy="220" r="17" fill="#ffffff" fill-opacity="0.3" />
+  <circle cx="420" cy="210" r="15" fill="#ffffff" fill-opacity="0.3" />
+  
+  <text x="300" y="100" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">Grup Fotoğrafı</text>
+  <text x="300" y="140" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">ITU Ginova Ailesi</text>
+</svg>

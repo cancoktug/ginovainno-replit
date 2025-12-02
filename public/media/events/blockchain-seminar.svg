@@ -1,0 +1,14 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#gradient4)"/>
+  <circle cx="60" cy="240" r="18" fill="white" opacity="0.1"/>
+  <circle cx="340" cy="80" r="22" fill="white" opacity="0.1"/>
+  <text x="200" y="130" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="bold">Blockchain ve</text>
+  <text x="200" y="160" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="bold">Web3 Semineri</text>
+  <text x="200" y="200" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14">5 Mart 2025 • Online</text>
+</svg>

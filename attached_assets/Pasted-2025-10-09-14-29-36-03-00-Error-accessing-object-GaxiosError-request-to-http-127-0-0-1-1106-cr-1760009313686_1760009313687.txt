@@ -1,0 +1,106 @@
+2025-10-09 14:29:36 +03:00: Error accessing object: GaxiosError: request to http://127.0.0.1:1106/credential failed, reason: connect ECONNREFUSED 127.0.0.1:1106
+0|ginova-app  |     at Gaxios._request (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/gaxios/build/src/gaxios.js:149:19)
+0|ginova-app  |     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+0|ginova-app  |     at async UrlSubjectTokenSupplier.getSubjectToken (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/urlsubjecttokensupplier.js:54:30)
+0|ginova-app  |     at async IdentityPoolClient._BaseExternalAccountClient_internalRefreshAccessTokenAsync (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/baseexternalclient.js:408:26)
+0|ginova-app  |     at async IdentityPoolClient.refreshAccessTokenAsync (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/baseexternalclient.js:316:20)
+0|ginova-app  |     at async IdentityPoolClient.getAccessToken (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/baseexternalclient.js:190:13)
+0|ginova-app  |     at async IdentityPoolClient.getRequestHeaders (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/baseexternalclient.js:207:37)
+0|ginova-app  |     at async GoogleAuth.authorizeRequest (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/googleauth.js:742:25)
+0|ginova-app  |     at async Promise.all (index 1)
+0|ginova-app  |     at async prepareRequest (file:///home/ginovai/ginovai_new/GinovaInnovation/node_modules/@google-cloud/storage/build/esm/src/nodejs-common/util.js:463:61) {
+0|ginova-app  |   config: {
+0|ginova-app  |     retry: true,
+0|ginova-app  |     retryConfig: {
+0|ginova-app  |       httpMethodsToRetry: [Array],
+0|ginova-app  |       currentRetryAttempt: 2,
+0|ginova-app  |       retry: 3,
+0|ginova-app  |       noResponseRetries: 2,
+0|ginova-app  |       retryDelayMultiplier: 2,
+0|ginova-app  |       timeOfFirstRequest: 1760009375893,
+0|ginova-app  |       totalTimeout: 9007199254740991,
+0|ginova-app  |       maxRetryDelay: 9007199254740991,
+0|ginova-app  |       statusCodesToRetry: [Array]
+0|ginova-app  |     },
+0|ginova-app  |     url: 'http://127.0.0.1:1106/credential',
+0|ginova-app  |     method: 'GET',
+0|ginova-app  |     headers: {
+0|ginova-app  |       'User-Agent': 'google-api-nodejs-client/9.15.1',
+0|ginova-app  |       'x-goog-api-client': 'gl-node/22.20.0',
+0|ginova-app  |       Accept: 'application/json'
+0|ginova-app  |     },
+0|ginova-app  |     responseType: 'json',
+0|ginova-app  |     paramsSerializer: [Function: paramsSerializer],
+0|ginova-app  |     validateStatus: [Function: validateStatus],
+0|ginova-app  |     errorRedactor: [Function: defaultErrorRedactor]
+0|ginova-app  |   },
+0|ginova-app  |   response: undefined,
+0|ginova-app  |   error: FetchError: request to http://127.0.0.1:1106/credential failed, reason: connect ECONNREFUSED 127.0.0.1:1106
+0|ginova-app  |       at ClientRequest.<anonymous> (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/gaxios/node_modules/node-fetch/lib/index.js:1501:11)
+0|ginova-app  |       at ClientRequest.emit (node:events:519:28)
+0|ginova-app  |       at emitErrorEvent (node:_http_client:105:11)
+0|ginova-app  |       at Socket.socketErrorListener (node:_http_client:518:5)
+0|ginova-app  |       at Socket.emit (node:events:519:28)
+0|ginova-app  |       at emitErrorNT (node:internal/streams/destroy:170:8)
+0|ginova-app  |       at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+0|ginova-app  |       at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+0|ginova-app  |     type: 'system',
+0|ginova-app  |     errno: 'ECONNREFUSED',
+0|ginova-app  |     code: 'ECONNREFUSED'
+0|ginova-app  |   },
+0|ginova-app  |   code: 'ECONNREFUSED',
+0|ginova-app  |   [Symbol(gaxios-gaxios-error)]: '6.7.1'
+0|ginova-app  | }
+6|ginova-app  | 2025-10-09 14:29:36 +03:00: Error accessing object: GaxiosError: request to http://127.0.0.1:1106/credential failed, reason: connect ECONNREFUSED 127.0.0.1:1106
+6|ginova-app  |     at Gaxios._request (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/gaxios/build/src/gaxios.js:149:19)
+6|ginova-app  |     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+6|ginova-app  |     at async UrlSubjectTokenSupplier.getSubjectToken (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/urlsubjecttokensupplier.js:54:30)
+6|ginova-app  |     at async IdentityPoolClient._BaseExternalAccountClient_internalRefreshAccessTokenAsync (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/baseexternalclient.js:408:26)
+6|ginova-app  |     at async IdentityPoolClient.refreshAccessTokenAsync (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/baseexternalclient.js:316:20)
+6|ginova-app  |     at async IdentityPoolClient.getAccessToken (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/baseexternalclient.js:190:13)
+6|ginova-app  |     at async IdentityPoolClient.getRequestHeaders (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/baseexternalclient.js:207:37)
+6|ginova-app  |     at async GoogleAuth.authorizeRequest (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/google-auth-library/build/src/auth/googleauth.js:742:25)
+6|ginova-app  |     at async Promise.all (index 1)
+6|ginova-app  |     at async prepareRequest (file:///home/ginovai/ginovai_new/GinovaInnovation/node_modules/@google-cloud/storage/build/esm/src/nodejs-common/util.js:463:61) {
+6|ginova-app  |   config: {
+6|ginova-app  |     retry: true,
+6|ginova-app  |     retryConfig: {
+6|ginova-app  |       httpMethodsToRetry: [Array],
+6|ginova-app  |       currentRetryAttempt: 2,
+6|ginova-app  |       retry: 3,
+6|ginova-app  |       noResponseRetries: 2,
+6|ginova-app  |       retryDelayMultiplier: 2,
+6|ginova-app  |       timeOfFirstRequest: 1760009376169,
+6|ginova-app  |       totalTimeout: 9007199254740991,
+6|ginova-app  |       maxRetryDelay: 9007199254740991,
+6|ginova-app  |       statusCodesToRetry: [Array]
+6|ginova-app  |     },
+6|ginova-app  |     url: 'http://127.0.0.1:1106/credential',
+6|ginova-app  |     method: 'GET',
+6|ginova-app  |     headers: {
+6|ginova-app  |       'User-Agent': 'google-api-nodejs-client/9.15.1',
+6|ginova-app  |       'x-goog-api-client': 'gl-node/22.20.0',
+6|ginova-app  |       Accept: 'application/json'
+6|ginova-app  |     },
+6|ginova-app  |     responseType: 'json',
+6|ginova-app  |     paramsSerializer: [Function: paramsSerializer],
+6|ginova-app  |     validateStatus: [Function: validateStatus],
+6|ginova-app  |     errorRedactor: [Function: defaultErrorRedactor]
+6|ginova-app  |   },
+6|ginova-app  |   response: undefined,
+6|ginova-app  |   error: FetchError: request to http://127.0.0.1:1106/credential failed, reason: connect ECONNREFUSED 127.0.0.1:1106
+6|ginova-app  |       at ClientRequest.<anonymous> (/home/ginovai/ginovai_new/GinovaInnovation/node_modules/gaxios/node_modules/node-fetch/lib/index.js:1501:11)
+6|ginova-app  |       at ClientRequest.emit (node:events:519:28)
+6|ginova-app  |       at emitErrorEvent (node:_http_client:105:11)
+6|ginova-app  |       at Socket.socketErrorListener (node:_http_client:518:5)
+6|ginova-app  |       at Socket.emit (node:events:519:28)
+6|ginova-app  |       at emitErrorNT (node:internal/streams/destroy:170:8)
+6|ginova-app  |       at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+6|ginova-app  |       at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+6|ginova-app  |     type: 'system',
+6|ginova-app  |     errno: 'ECONNREFUSED',
+6|ginova-app  |     code: 'ECONNREFUSED'
+6|ginova-app  |   },
+6|ginova-app  |   code: 'ECONNREFUSED',
+6|ginova-app  |   [Symbol(gaxios-gaxios-error)]: '6.7.1'
+6|ginova-app  | }

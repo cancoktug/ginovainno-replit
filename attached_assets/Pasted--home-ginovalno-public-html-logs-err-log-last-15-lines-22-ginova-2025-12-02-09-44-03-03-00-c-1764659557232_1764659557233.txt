@@ -1,0 +1,50 @@
+/home/ginovalno/public_html/logs/err.log last 15 lines:
+22|ginova- | 2025-12-02 09:44:03 +03:00:   column: undefined,
+22|ginova- | 2025-12-02 09:44:03 +03:00:   dataType: undefined,
+22|ginova- | 2025-12-02 09:44:03 +03:00:   constraint: undefined,
+22|ginova- | 2025-12-02 09:44:03 +03:00:   file: 'parse_relation.c',
+22|ginova- | 2025-12-02 09:44:03 +03:00:   line: '3716',
+22|ginova- | 2025-12-02 09:44:03 +03:00:   routine: 'errorMissingColumn'
+22|ginova- | 2025-12-02 09:44:03 +03:00: }
+22|ginova- | 2025-12-02 10:11:11 +03:00: Error: DATABASE_URL must be set. Did you forget to provision a database?
+22|ginova- | 2025-12-02 10:11:11 +03:00:     at server/db.ts (file:///home/ginovalno/public_html/dist/index.js:412:13)
+22|ginova- | 2025-12-02 10:11:11 +03:00:     at __init (file:///home/ginovalno/public_html/dist/index.js:10:56)
+22|ginova- | 2025-12-02 10:11:11 +03:00:     at server/storage.ts (file:///home/ginovalno/public_html/dist/index.js:429:5)
+22|ginova- | 2025-12-02 10:11:11 +03:00:     at __init (file:///home/ginovalno/public_html/dist/index.js:10:56)
+22|ginova- | 2025-12-02 10:11:11 +03:00:     at file:///home/ginovalno/public_html/dist/index.js:1787:1
+22|ginova- | 2025-12-02 10:11:11 +03:00:     at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+22|ginova- | 2025-12-02 10:11:11 +03:00:     at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+
+^C
+[root@37-148-212-224 public_html]# cat .env
+# Database (Yeni Neon DB)
+DATABASE_URL=postgresql://neondb_owner:npg_cz9WhAdgUN8R@ep-patient-shape-ad0pcixl-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&options=endpoint%3Dep-patient-shape-ad0pcixl-pooler
+
+# Session Secret (Güvenlik için rastgele güçlü bir string)
+SESSION_SECRET="oL0bTR3/25x9SCPLj/0EnlphXsudApgHDviNxzYrgeE="
+
+# Base URL (Password reset linkleri için)
+BASE_URL=http://ginovainnovation.com/
+REPLIT_DEV_DOMAIN=http://ginovainnovation.com/
+
+# Session Cookie Ayarları (Nginx reverse proxy için)
+SESSION_COOKIE_SECURE=true
+SESSION_COOKIE_SAMESITE=lax
+SESSION_COOKIE_DOMAIN=ginova.itu.edu.tr
+
+
+# Email Settings (ITU SMTP - zaten kodda hardcoded ama eklemek isterseniz)
+EMAIL_HOST=outgoing.itu.edu.tr
+EMAIL_PORT=587
+EMAIL_USER=ginova@itu.edu.tr
+EMAIL_PASSWORD=xgmRy5f8yX
+EMAIL_FROM=ginova@itu.edu.tr
+
+# Node Environment
+NODE_ENV=production
+
+# Port (PM2 kullanıyorsanız opsiyonel, default 5000)
+PORT=5000
+
+# File Upload Directory
+UPLOAD_DIR=/home/ginovalno/public_html

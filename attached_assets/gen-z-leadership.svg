@@ -1,0 +1,57 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="genzGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891B2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F0F9FF"/>
+  
+  <!-- Digital native symbols -->
+  <rect x="160" y="80" width="80" height="50" fill="#1F2937" rx="8"/>
+  <rect x="170" y="90" width="60" height="30" fill="url(#genzGrad)" rx="3"/>
+  
+  <!-- Mobile devices -->
+  <rect x="120" y="150" width="35" height="60" fill="#4B5563" rx="8"/>
+  <rect x="127" y="160" width="21" height="35" fill="#06B6D4" rx="2"/>
+  
+  <rect x="245" y="150" width="35" height="60" fill="#4B5563" rx="8"/>
+  <rect x="252" y="160" width="21" height="35" fill="#06B6D4" rx="2"/>
+  
+  <!-- Social media icons -->
+  <circle cx="100" cy="100" r="12" fill="#FF5722" opacity="0.9"/>
+  <text x="100" y="105" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">@</text>
+  
+  <circle cx="300" cy="100" r="12" fill="#8B5CF6" opacity="0.9"/>
+  <text x="300" y="105" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">#</text>
+  
+  <!-- Generation Z figure -->
+  <circle cx="200" cy="120" r="20" fill="url(#genzGrad)" opacity="0.9"/>
+  <text x="200" y="127" text-anchor="middle" fill="white" font-family="Arial" font-size="14" font-weight="bold">Z</text>
+  
+  <!-- Innovation arrows -->
+  <path d="M 80 180 Q 100 160 120 180" fill="none" stroke="#06B6D4" stroke-width="3"/>
+  <path d="M 280 180 Q 300 160 320 180" fill="none" stroke="#06B6D4" stroke-width="3"/>
+  
+  <!-- Progress indicators -->
+  <rect x="50" y="230" width="300" height="6" fill="#E5E7EB" rx="3"/>
+  <rect x="50" y="230" width="250" height="6" fill="url(#genzGrad)" rx="3"/>
+  
+  <rect x="50" y="245" width="300" height="6" fill="#E5E7EB" rx="3"/>
+  <rect x="50" y="245" width="200" height="6" fill="#10B981" rx="3"/>
+  
+  <!-- Digital connectivity -->
+  <circle cx="150" cy="50" r="6" fill="#EF4444" opacity="0.8"/>
+  <circle cx="200" cy="40" r="6" fill="#10B981" opacity="0.8"/>
+  <circle cx="250" cy="50" r="6" fill="#F59E0B" opacity="0.8"/>
+  
+  <line x1="150" y1="50" x2="200" y2="40" stroke="#64748B" stroke-width="1" opacity="0.6"/>
+  <line x1="200" y1="40" x2="250" y2="50" stroke="#64748B" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" fill="#0891B2" font-family="Arial" font-size="16" font-weight="bold">Gen Z Liderlik</text>
+  <text x="200" y="270" text-anchor="middle" fill="#64748B" font-family="Arial" font-size="12">Dijital Natif Girişimciler</text>
+  <text x="200" y="285" text-anchor="middle" fill="#64748B" font-family="Arial" font-size="10">Innovation • Technology • Future</text>
+</svg>

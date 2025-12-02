@@ -1,0 +1,14 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BE185D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#gradient5)"/>
+  <circle cx="90" cy="90" r="16" fill="white" opacity="0.1"/>
+  <circle cx="310" cy="210" r="19" fill="white" opacity="0.1"/>
+  <text x="200" y="120" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Kadın Girişimciler</text>
+  <text x="200" y="150" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Paneli</text>
+  <text x="200" y="200" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14">8 Mart 2025 • İTÜ Rektörlük</text>
+</svg>

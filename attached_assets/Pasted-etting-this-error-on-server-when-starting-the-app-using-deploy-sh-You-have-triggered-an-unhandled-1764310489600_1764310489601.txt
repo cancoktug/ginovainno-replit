@@ -1,0 +1,60 @@
+etting this error on server when starting the app using deploy.sh
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Could not load the "sharp" module using the linux-x64 runtime
+Unsupported CPU: Prebuilt binaries for linux-x64 require v2 microarchitecture
+Possible solutions:
+
+Ensure optional dependencies can be installed:
+npm install --include=optional sharp
+
+Ensure your package manager supports multi-platform installation:
+See https://sharp.pixelplumbing.com/install#cross-platform
+
+Add platform-specific dependencies:
+npm install --os=linux --cpu=x64 sharp
+
+Consult the installation documentation:
+See https://sharp.pixelplumbing.com/install
+at Object.<anonymous> (/home/ginovalno/public_html/node_modules/sharp/lib/sharp.js:121:9)
+at Module._compile (node:internal/modules/cjs/loader:1521:14)
+at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+at Module.load (node:internal/modules/cjs/loader:1266:32)
+at Module._load (node:internal/modules/cjs/loader:1091:12)
+at Module.require (node:internal/modules/cjs/loader:1289:19)
+at Hook._require.Module.require (/root/.nvm/versions/node/v20.19.5/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+at require (node:internal/modules/helpers:182:18)
+at Object.<anonymous> (/home/ginovalno/public_html/node_modules/sharp/lib/constructor.js:10:1)
+at Module._compile (node:internal/modules/cjs/loader:1521:14)
+
+also we need to use this env on server
+
+cat .env
+
+Database (Yeni Neon DB)
+DATABASE_URL=postgresql://neondb_owner:npg_cz9WhAdgUN8R@ep-patient-shape-ad0pcixl-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&options=endpoint%3Dep-patient-shape-ad0pcixl-pooler
+
+Session Secret (Güvenlik için rastgele güçlü bir string)
+SESSION_SECRET="oL0bTR3/25x9SCPLj/0EnlphXsudApgHDviNxzYrgeE="
+
+Base URL (Password reset linkleri için)
+BASE_URL=http://ginovainnovation.com/
+REPLIT_DEV_DOMAIN=http://ginovainnovation.com/
+
+Session Cookie Ayarları (Nginx reverse proxy için)
+SESSION_COOKIE_SECURE=false
+SESSION_COOKIE_SAMESITE=lax
+SESSION_COOKIE_DOMAIN=ginova.itu.edu.tr
+
+Email Settings (ITU SMTP - zaten kodda hardcoded ama eklemek isterseniz)
+EMAIL_HOST=outgoing.itu.edu.tr
+EMAIL_PORT=587
+EMAIL_USER=ginova@itu.edu.tr
+EMAIL_PASSWORD=xgmRy5f8yX
+EMAIL_FROM=ginova@itu.edu.tr
+
+Node Environment
+NODE_ENV=production
+
+Port (PM2 kullanıyorsanız opsiyonel, default 5000)
+PORT=5000

@@ -1,0 +1,55 @@
+il in /var/spool/mail/root
+[root@srv public_html]# pm2 status
+
+>>>> In-memory PM2 is out-of-date, do:
+>>>> $ pm2 update
+In memory PM2 version: 6.0.13
+Local PM2 version: 6.0.10
+
+┌────┬───────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name          │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼───────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 9  │ ginova-app    │ default     │ 0.37.2  │ cluster │ 0        │ 0      │ 18   │  │ 0%       │ 0b       │ root     │ disabled │
+│ 10 │ ginova-app    │ default     │ 0.37.2  │ cluster │ 0        │ 0      │ 18   │  │ 0%       │ 0b       │ root     │ disabled │
+│ 11 │ ginova-app    │ default     │ 0.37.2  │ cluster │ 0        │ 0      │ 18   │  │ 0%       │ 0b       │ root     │ disabled │
+│ 12 │ ginova-app    │ default     │ 0.37.2  │ cluster │ 0        │ 0      │ 18   │  │ 0%       │ 0b       │ root     │ disabled │
+│ 13 │ ginova-app    │ default     │ 0.37.2  │ cluster │ 0        │ 0      │ 18   │  │ 0%       │ 0b       │ root     │ disabled │
+│ 14 │ ginova-app    │ default     │ 0.37.2  │ cluster │ 0        │ 0      │ 18   │  │ 0%       │ 0b       │ root     │ disabled │
+│ 15 │ ginova-app    │ default     │ 0.37.2  │ cluster │ 0        │ 0      │ 18   │  │ 0%       │ 0b       │ root     │ disabled │
+│ 16 │ ginova-app    │ default     │ 0.37.2  │ cluster │ 0        │ 0      │ 18   │  │ 0%       │ 0b       │ root     │ disabled │
+└────┴───────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+Module
+┌────┬──────────────────────────────┬───────────────┬──────────┬──────────┬──────┬──────────┬──────────┬──────────┐
+│ id │ module                       │ version       │ pid      │ status   │ ↺    │ cpu      │ mem      │ user     │
+├────┼──────────────────────────────┼───────────────┼──────────┼──────────┼──────┼──────────┼──────────┼──────────┤
+│ 8  │ tsx                          │ 4.20.6        │ 724535   │ online   │ 0    │ 0%       │ 38.7mb   │ root     │
+└────┴──────────────────────────────┴───────────────┴──────────┴──────────┴──────┴──────────┴──────────┴──────────┘
+[root@srv public_html]# pm2 logs ginova-app --lines 20
+
+>>>> In-memory PM2 is out-of-date, do:
+>>>> $ pm2 update
+In memory PM2 version: 6.0.13
+Local PM2 version: 6.0.10
+
+[TAILING] Tailing last 20 lines for [ginova-app] process (change the value with --lines option)
+/home/ginovai/public_html/logs/err.log last 20 lines:
+9|ginova-a |     _sender: null,
+9|ginova-a |     _socket: null,
+9|ginova-a |     _bufferedAmount: 0,
+9|ginova-a |     _isServer: false,
+9|ginova-a |     _redirects: 0,
+9|ginova-a |     _autoPong: true,
+9|ginova-a |     _url: 'wss://localhost/v2',
+9|ginova-a |     _req: null,
+9|ginova-a |     [Symbol(shapeMode)]: false,
+9|ginova-a |     [Symbol(kCapture)]: false
+9|ginova-a |   },
+9|ginova-a |   [Symbol(kType)]: 'error',
+9|ginova-a |   [Symbol(kError)]: AggregateError [ECONNREFUSED]: 
+9|ginova-a |       at internalConnectMultiple (node:net:1134:18)
+9|ginova-a |       at afterConnectMultiple (node:net:1715:7) {
+9|ginova-a |     code: 'ECONNREFUSED',
+9|ginova-a |     [errors]: [ [Error], [Error] ]
+9|ginova-a |   },
+9|ginova-a |   [Symbol(kMessage)]: ''
+9|ginova-a | }
