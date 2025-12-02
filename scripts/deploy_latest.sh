@@ -116,14 +116,29 @@ main() {
     npm run build 2>&1 || error_exit "Build failed"
     echo -e "${GREEN}✓ Application built successfully${NC}"
     
-    # Step 5: Ensure upload directory exists
+    # Step 5: Ensure upload directory exists and sync images
     echo ""
-    log "${BLUE}[5/7] Setting up directories and permissions...${NC}"
+    log "${BLUE}[5/7] Setting up directories and syncing images...${NC}"
     UPLOAD_DIR=$(grep UPLOAD_DIR .env | cut -d '=' -f2 | tr -d '"' | tr -d "'")
     UPLOAD_DIR=${UPLOAD_DIR:-"${APP_DIR}/uploads"}
     mkdir -p "$UPLOAD_DIR"
     mkdir -p "$LOG_DIR"
-    chmod 755 "$UPLOAD_DIR"
+    
+    # Copy images from repo uploads folder to UPLOAD_DIR if different
+    if [ -d "${APP_DIR}/uploads" ] && [ "${APP_DIR}/uploads" != "$UPLOAD_DIR" ]; then
+        echo -e "${YELLOW}Copying images from repo to upload directory...${NC}"
+        cp -n ${APP_DIR}/uploads/*.jpg "$UPLOAD_DIR/" 2>/dev/null || true
+        cp -n ${APP_DIR}/uploads/*.png "$UPLOAD_DIR/" 2>/dev/null || true
+        cp -n ${APP_DIR}/uploads/*.webp "$UPLOAD_DIR/" 2>/dev/null || true
+    fi
+    
+    # Ensure images in repo uploads are available
+    if [ -d "${APP_DIR}/uploads" ]; then
+        IMAGE_COUNT=$(ls -1 ${APP_DIR}/uploads/*.jpg 2>/dev/null | wc -l)
+        echo -e "${GREEN}✓ Found ${IMAGE_COUNT} images in repository${NC}"
+    fi
+    
+    chmod -R 755 "$UPLOAD_DIR"
     chmod 755 "$LOG_DIR"
     echo -e "${GREEN}✓ Directories configured${NC}"
     

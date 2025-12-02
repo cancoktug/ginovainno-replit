@@ -12,8 +12,9 @@ deployment-chunks
 .env.production
 .env.*.local
 
-# Uploads directory (server-side files)
-uploads/
+# Uploads directory - tracked in git for deployment
+# Note: Images are synced from Replit Object Storage using scripts/sync-images-to-repo.mjs
+# uploads/
 
 # Logs
 logs/
