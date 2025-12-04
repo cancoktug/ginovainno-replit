@@ -6,7 +6,14 @@ import { config } from "./config";
 
 neonConfig.webSocketConstructor = ws;
 
-export const pool = new Pool({ connectionString: config.databaseUrl });
+// Configure pool with better timeout handling for Neon's serverless nature
+export const pool = new Pool({ 
+  connectionString: config.databaseUrl,
+  connectionTimeoutMillis: 30000, // 30 seconds to connect (Neon cold start)
+  idleTimeoutMillis: 30000, // Close idle connections after 30 seconds
+  max: 10, // Maximum pool size
+  allowExitOnIdle: true // Allow pool to close when idle
+});
 export const db = drizzle({ client: pool, schema });
 
 export async function checkDatabaseConnection(): Promise<{ connected: boolean; error?: string }> {
