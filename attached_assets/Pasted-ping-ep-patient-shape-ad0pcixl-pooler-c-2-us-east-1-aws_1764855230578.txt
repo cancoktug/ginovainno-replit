@@ -1,0 +1,45 @@
+ping ep-patient-shape-ad0pcixl-pooler.c-2.us-east-1.aws.neon.tech
+PING c-2.us-east-1.aws.neon.tech (54.156.15.30) 56(84) bytes of data.
+^C
+--- c-2.us-east-1.aws.neon.tech ping statistics ---
+59 packets transmitted, 0 received, 100% packet loss, time 59403ms
+
+[root@37-148-212-224 public_html]# nc -zv ep-patient-shape-ad0pcixl-pooler.c-2.us-east-1.aws.neon.tech 5432
+Connection to ep-patient-shape-ad0pcixl-pooler.c-2.us-east-1.aws.neon.tech (3.218.140.61) 5432 port [tcp/postgres] succeeded!
+[root@37-148-212-224 public_html]# telnet ep-patient-shape-ad0pcixl-pooler.c-2.us-east-1.aws.neon.tech 5432
+-bash: telnet: command not found
+[root@37-148-212-224 public_html]# yum install telnet
+Last metadata expiration check: 1:13:58 ago on Thu 04 Dec 2025 03:19:17 PM +03.
+Dependencies resolved.
+============================================================================================================================================================================================= Package                                    Architecture                               Version                                           Repository                                     Size
+=============================================================================================================================================================================================Installing:
+ telnet                                     x86_64                                     1:0.17-76.el8                                     appstream                                      71 k
+
+Transaction Summary
+=============================================================================================================================================================================================Install  1 Package
+
+Total download size: 71 k
+Installed size: 119 k
+Is this ok [y/N]: y
+Downloading Packages:
+telnet-0.17-76.el8.x86_64.rpm                                                                                                                                724 kB/s |  71 kB     00:00    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Total                                                                                                                                                         32 kB/s |  71 kB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                                                                                                     1/1 
+  Installing       : telnet-1:0.17-76.el8.x86_64                                                                                                                                         1/1 
+  Running scriptlet: telnet-1:0.17-76.el8.x86_64                                                                                                                                         1/1 
+  Verifying        : telnet-1:0.17-76.el8.x86_64                                                                                                                                         1/1 
+
+Installed:
+  telnet-1:0.17-76.el8.x86_64                                                                                                                                                                
+
+Complete!
+[root@37-148-212-224 public_html]# telnet ep-patient-shape-ad0pcixl-pooler.c-2.us-east-1.aws.neon.tech 5432
+Trying 54.156.15.30...
+Connected to ep-patient-shape-ad0pcixl-pooler.c-2.us-east-1.aws.neon.tech.
+Escape character is '^]'.
+^X^C^A^A^AConnection closed by foreign host.

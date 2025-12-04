@@ -1,0 +1,63 @@
+/home/ginovalno/public_html/logs/err.log last 30 lines:
+23|ginova- | 2025-12-02 20:04:15 +03:00:     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+23|ginova- | 2025-12-02 20:04:15 +03:00:     at async NeonPreparedQuery.execute (file:///home/ginovalno/public_html/node_modules/drizzle-orm/neon-serverless/session.js:76:20)
+23|ginova- | 2025-12-02 20:04:15 +03:00:     at async DatabaseStorage.getUserByEmail (file:///home/ginovalno/public_html/dist/index.js:506:24)
+23|ginova- | 2025-12-02 20:04:15 +03:00:     at async Strategy._verify (file:///home/ginovalno/public_html/dist/index.js:1036:24)
+23|ginova- | 2025-12-02 20:06:17 +03:00: error: relation "sessions" does not exist
+23|ginova- | 2025-12-02 20:06:17 +03:00:     at /home/ginovalno/public_html/node_modules/pg-pool/index.js:45:11
+23|ginova- | 2025-12-02 20:06:17 +03:00:     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+23|ginova- | 2025-12-02 20:06:17 +03:00:     at async PGStore._asyncQuery (/home/ginovalno/public_html/node_modules/connect-pg-simple/index.js:322:21)
+23|ginova- | 2025-12-02 20:06:18 +03:00: error: relation "sessions" does not exist
+23|ginova- | 2025-12-02 20:06:18 +03:00:     at /home/ginovalno/public_html/node_modules/pg-pool/index.js:45:11
+23|ginova- | 2025-12-02 20:06:18 +03:00:     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+23|ginova- | 2025-12-02 20:06:18 +03:00:     at async PGStore._asyncQuery (/home/ginovalno/public_html/node_modules/connect-pg-simple/index.js:322:21)
+23|ginova- | 2025-12-02 20:06:19 +03:00: error: relation "sessions" does not exist
+23|ginova- | 2025-12-02 20:06:19 +03:00:     at /home/ginovalno/public_html/node_modules/pg-pool/index.js:45:11
+23|ginova- | 2025-12-02 20:06:19 +03:00:     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+23|ginova- | 2025-12-02 20:06:19 +03:00:     at async PGStore._asyncQuery (/home/ginovalno/public_html/node_modules/connect-pg-simple/index.js:322:21)
+23|ginova- | 2025-12-02 20:06:22 +03:00: error: relation "sessions" does not exist
+23|ginova- | 2025-12-02 20:06:22 +03:00:     at /home/ginovalno/public_html/node_modules/pg-pool/index.js:45:11
+23|ginova- | 2025-12-02 20:06:22 +03:00:     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+23|ginova- | 2025-12-02 20:06:22 +03:00:     at async PGStore._asyncQuery (/home/ginovalno/public_html/node_modules/connect-pg-simple/index.js:322:21)
+23|ginova- | 2025-12-02 20:17:11 +03:00: Sharp module not available - image optimization disabled, images will be saved as-is
+23|ginova- | 2025-12-02 20:24:21 +03:00: Sharp module not available - image optimization disabled, images will be saved as-is
+23|ginova- | 2025-12-02 22:05:54 +03:00: Session store error: undefined undefined
+23|ginova- | 2025-12-03 04:14:09 +03:00: Session store error: undefined undefined
+23|ginova- | 2025-12-04 12:23:45 +03:00: Sharp module not available - image optimization disabled, images will be saved as-is
+23|ginova- | 2025-12-04 16:29:35 +03:00: AggregateError [ETIMEDOUT]: 
+23|ginova- | 2025-12-04 16:29:35 +03:00:     at /home/ginovalno/public_html/node_modules/pg-pool/index.js:45:11
+23|ginova- | 2025-12-04 16:29:35 +03:00:     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+23|ginova- | 2025-12-04 16:29:35 +03:00:     at async PGStore._asyncQuery (/home/ginovalno/public_html/node_modules/connect-pg-simple/index.js:322:21)
+23|ginova- | 2025-12-04 16:35:46 +03:00: Sharp module not available - image optimization disabled, images will be saved as-is
+
+/home/ginovalno/public_html/logs/out.log last 30 lines:
+23|ginova- | 2025-12-04 02:28:27 +03:00: 2:28:27 AM [express] GET /api/events 200 in 700ms :: [{"id":9,"title":"Sürdürülebilirlik ve İnovasyo…
+23|ginova- | 2025-12-04 02:29:05 +03:00: 2:29:05 AM [express] GET /api/auth/user 401 in 3ms :: {"message":"Giriş yapmanız gerekiyor"}
+23|ginova- | 2025-12-04 02:29:06 +03:00: Object storage mode: Local filesystem. UPLOAD_DIR: /home/ginovalno/public_html/uploads
+23|ginova- | 2025-12-04 02:29:06 +03:00: 2:29:06 AM [express] GET /api/team 200 in 639ms :: [{"id":7,"name":"Dr. Tankut Akgül","title":"Yönet…
+23|ginova- | 2025-12-04 02:29:58 +03:00: 2:29:58 AM [express] GET /api/auth/user 401 in 3ms :: {"message":"Giriş yapmanız gerekiyor"}
+23|ginova- | 2025-12-04 02:36:04 +03:00: 2:36:04 AM [express] GET /api/auth/user 401 in 7ms :: {"message":"Giriş yapmanız gerekiyor"}
+23|ginova- | 2025-12-04 10:27:27 +03:00: 10:27:27 AM [express] GET /api/health 503 in 1087ms :: {"status":"unhealthy","timestamp":"2025-12-04T…
+23|ginova- | 2025-12-04 10:37:07 +03:00: 10:37:07 AM [express] GET /api/health 503 in 534ms :: {"status":"unhealthy","timestamp":"2025-12-04T0…
+23|ginova- | 2025-12-04 12:23:45 +03:00: Configuration loaded successfully:
+23|ginova- | 2025-12-04 12:23:45 +03:00:   - Environment: production
+23|ginova- | 2025-12-04 12:23:45 +03:00:   - Port: 5000
+23|ginova- | 2025-12-04 12:23:45 +03:00:   - Base URL: https://ginova.itu.edu.tr
+23|ginova- | 2025-12-04 12:23:45 +03:00:   - Upload Dir: /home/ginovalno/public_html/uploads
+23|ginova- | 2025-12-04 12:23:45 +03:00:   - Is Replit: true
+23|ginova- | 2025-12-04 12:23:45 +03:00:   - Database: postgresql://neondb_owner:****@ep-patient-shape-ad0pcixl-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&options=endpoint%3Dep-patient-shape-ad0pcixl-pooler
+23|ginova- | 2025-12-04 12:23:45 +03:00: Object storage mode: Local filesystem. UPLOAD_DIR: /home/ginovalno/public_html/uploads
+23|ginova- | 2025-12-04 12:23:48 +03:00: Session store database connection successful
+23|ginova- | 2025-12-04 12:23:48 +03:00: Session config: secure=true, sameSite=lax, domain=ginova.itu.edu.tr
+23|ginova- | 2025-12-04 12:23:48 +03:00: 12:23:48 PM [express] serving on port 5000
+23|ginova- | 2025-12-04 16:35:46 +03:00: Configuration loaded successfully:
+23|ginova- | 2025-12-04 16:35:46 +03:00:   - Environment: production
+23|ginova- | 2025-12-04 16:35:46 +03:00:   - Port: 5000
+23|ginova- | 2025-12-04 16:35:46 +03:00:   - Base URL: https://ginova.itu.edu.tr
+23|ginova- | 2025-12-04 16:35:46 +03:00:   - Upload Dir: /home/ginovalno/public_html/uploads
+23|ginova- | 2025-12-04 16:35:46 +03:00:   - Is Replit: true
+23|ginova- | 2025-12-04 16:35:46 +03:00:   - Database: postgresql://neondb_owner:****@ep-patient-shape-ad0pcixl-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&options=endpoint%3Dep-patient-shape-ad0pcixl-pooler
+23|ginova- | 2025-12-04 16:35:46 +03:00: Object storage mode: Local filesystem. UPLOAD_DIR: /home/ginovalno/public_html/uploads
+23|ginova- | 2025-12-04 16:35:47 +03:00: Session store database connection successful
+23|ginova- | 2025-12-04 16:35:47 +03:00: Session config: secure=true, sameSite=lax, domain=ginova.itu.edu.tr
+23|ginova- | 2025-12-04 16:35:48 +03:00: 4:35:48 PM [express] serving on port 5000
