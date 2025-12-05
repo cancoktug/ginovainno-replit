@@ -7,6 +7,14 @@ const app = express();
 app.use(express.json({ limit: '100mb' }));
 app.use(express.urlencoded({ extended: false, limit: '100mb' }));
 
+// Debug middleware to log ALL incoming requests (helps diagnose proxy issues)
+app.use((req, res, next) => {
+  if (req.path.startsWith('/api')) {
+    console.log(`[DEBUG] Incoming request: ${req.method} ${req.path} | URL: ${req.url} | Original: ${req.originalUrl}`);
+  }
+  next();
+});
+
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
