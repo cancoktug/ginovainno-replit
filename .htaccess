@@ -1,14 +1,21 @@
 # =============================================================================
-# ITU Ginova - Apache Configuration (Simplified)
+# ITU Ginova - Apache Configuration
 # Domain: ginova.itu.edu.tr
 # =============================================================================
 
+# Disable DirectoryIndex to prevent conflicts with proxy
+DirectoryIndex disabled
+
+# Enable Rewrite Engine
 RewriteEngine On
 RewriteBase /
 
 # API requests - proxy to Node.js FIRST (before any file checks)
 RewriteCond %{REQUEST_URI} ^/api/ [NC]
 RewriteRule ^(.*)$ http://127.0.0.1:5000/$1 [P,L]
+
+# Handle root path explicitly
+RewriteRule ^$ http://127.0.0.1:5000/ [P,L]
 
 # All other requests - proxy to Node.js if not a real file
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -19,6 +26,9 @@ RewriteRule ^(.*)$ http://127.0.0.1:5000/$1 [P,L]
 RequestHeader set X-Forwarded-Proto "https"
 RequestHeader set X-Forwarded-Host "%{HTTP_HOST}s"
 RequestHeader set X-Real-IP "%{REMOTE_ADDR}s"
+
+# Fix redirects from backend (acts like ProxyPassReverse)
+Header edit Location ^http://127\.0\.0\.1:5000/(.*) https://ginova.itu.edu.tr/$1
 
 # Security Headers
 Header set X-Content-Type-Options "nosniff"
