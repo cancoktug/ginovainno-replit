@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import { config } from './config';
 
 export interface EmailTemplate {
   to: string;
@@ -539,7 +540,7 @@ export class EmailService {
 
   // Password reset email
   generatePasswordResetEmail(userEmail: string, userName: string, resetToken: string): EmailTemplate {
-    const resetUrl = `${process.env.REPLIT_DEV_DOMAIN || 'http://localhost:5000'}/reset-password?token=${resetToken}`;
+    const resetUrl = `${config.baseUrl}/reset-password?token=${resetToken}`;
     
     return {
       to: userEmail,
